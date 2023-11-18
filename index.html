@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Shery's Diner</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="index.css">
+        <!-- Smythe Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+        <!-- Inter ExtraLight Font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
+    </head>
+    
+    <body>
+        <main>
+            <header>
+                <nav>
+                    <h1>Shery's Diner</h1>
+                    <h3>The best burgers and pizzas in town.</h3>
+                </nav>
+            </header>
+
+            <section>
+                <div id="menu-div">
+
+                </div>
+            </section>
+
+            <section class="order-section hidden" id="order-section">
+                <h2 class="yourOrder">Your order</h2>
+                <div id="current-order">
+
+                </div>
+                <button class="order-btn" id="order-btn">Complete order</button>
+            </section>
+
+            <div class="modal hidden" id="modal">
+                <form class="form">
+                    <label>Enter card details</label>
+                    <input class="display-block input-box" type="textbox" id='name' placeholder="Enter your name">
+                    <input class="display-block input-box" type="textbox" placeholder="Enter your number">
+                    <input class="display-block input-box" type="textbox" placeholder="Enter CVV">
+                    <button class="pay-btn" id="pay-btn">Pay</button>
+                </form>
+            </div>
+
+            <div class="payment-confirmation" id="payment-confirmation">
+                
+            </div>
+        </main>
+
+        <script src="index.js" type="module"></script>
+    </body>
+</html>
